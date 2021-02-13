@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity, Header, TextInput, KeyboardAvoidingView, ToastAndroid } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, TextInput, KeyboardAvoidingView, ToastAndroid } from 'react-native';
 import db from '../config.js'
 import firebase from 'firebase'
 
@@ -31,7 +31,6 @@ export default class Write extends React.Component {
            <KeyboardAvoidingView>
             
             <View style = {styles.container}>
-             <Header backgroundColor = {'#23DAF9'} centerComponent = {{text: 'Write a Story', style: {color: '#2A23F9', fontSize: 20}, }}/>
 
              <TextInput style = {styles.input} onChangeText={(text) => {
                 this.setState({
